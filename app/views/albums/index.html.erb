@@ -1,1 +1,7 @@
-<h1>Rock 'n Rails! (albums#index)</h1>
+<h1>Rock 'n Rails!</h1>
+
+<% @albums.each do |album| %>
+  <p>Title: <%= album.title %></p>
+  <p>Artist: <%= album.artist %></p>
+  <img src="<%= album.cover_art %>">
+<% end %>

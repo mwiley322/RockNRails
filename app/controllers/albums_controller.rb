@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
   def index
-    render :index
+    @albums = Album.all
   end
 end
