@@ -1,6 +1,6 @@
 <h1>Rock 'n Rails</h1>
 
-<img src="<%= @album.cover_art %>">
+<%= image_tag @album.cover_art %>
 <h1><%= @album.title %></h1>
 <h2>by <%= @album.artist %></h2>
 <p>Year: <%= @album.year %></p>

@@ -3,7 +3,7 @@
 <% @albums.each do |album| %>
   <p>Title: <%= album.title %></p>
   <p>Artist: <%= album.artist %></p>
-  <img src="<%= album.cover_art %>">
+  <%= image_tag album.cover_art %>
   <br>
-  <a href="/albums/<%= album.id %>">Show page</a>
+  <%= link_to "Show Page", album_path(album.id) %>
 <% end %>
